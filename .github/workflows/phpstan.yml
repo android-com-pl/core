@@ -1,0 +1,31 @@
+name: PHPStan
+
+on: [push, pull_request]
+
+jobs:
+  analyse:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php: ['8.0']
+
+    name: 'PHP ${{ matrix.php }} Analyse'
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@0b9d33cd0782337377999751fc10ea079fdd7104 # pin@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: xdebug
+          extensions: curl, dom, gd, json, mbstring, openssl, pdo_mysql, tokenizer, zip
+          tools: composer:v2, phpstan
+
+      - name: Install Composer dependencies
+        run: composer install
+
+      - name: Run phpstan analyse
+        run: phpstan
