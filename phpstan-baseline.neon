@@ -1,0 +1,583 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Access to an undefined property Flarum\\\\Admin\\\\Content\\\\AdminPayload\\:\\:\\$events\\.$#"
+			count: 2
+			path: src/Admin/Content/AdminPayload.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\User\\:\\:count\\(\\)\\.$#"
+			count: 1
+			path: src/Admin/Content/AdminPayload.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Api/ApiKey.php
+
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Database\\\\AbstractModel\\:\\:\\$discussion_id\\.$#"
+			count: 2
+			path: src/Api/Controller/ListNotificationsController.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Discussion\\\\Discussion\\:\\:find\\(\\)\\.$#"
+			count: 1
+			path: src/Api/Controller/ListNotificationsController.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Group\\\\Permission\\:\\:insert\\(\\)\\.$#"
+			count: 1
+			path: src/Api/Controller/SetPermissionController.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Group\\\\Permission\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Api/Controller/SetPermissionController.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\HasMany\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 2
+			path: src/Api/Controller/ShowDiscussionController.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Group\\\\Group\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/Api/Controller/ShowForumController.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Database\\\\AbstractModel\\:\\:\\$id\\.$#"
+			count: 1
+			path: src/Api/Controller/ShowUserController.php
+
+		-
+			message: "#^Access to an undefined property class@anonymous/Console/Schedule\\.php\\:20\\:\\:\\$config\\.$#"
+			count: 2
+			path: src/Console/Schedule.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Support\\\\HigherOrderCollectionProxy\\:\\:isDue\\(\\)\\.$#"
+			count: 1
+			path: src/Console/Schedule.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Connection\\:\\:getSchemaState\\(\\)\\.$#"
+			count: 1
+			path: src/Database/Console/GenerateDumpCommand.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\ConnectionInterface\\:\\:getSchemaBuilder\\(\\)\\.$#"
+			count: 1
+			path: src/Database/DatabaseMigrationRepository.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\ConnectionInterface\\:\\:getSchemaBuilder\\(\\)\\.$#"
+			count: 3
+			path: src/Database/Migrator.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\ConnectionInterface\\:\\:getTablePrefix\\(\\)\\.$#"
+			count: 1
+			path: src/Database/Migrator.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Notification\\\\Notification\\:\\:whereSubject\\(\\)\\.$#"
+			count: 1
+			path: src/Discussion/Discussion.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Notification\\\\Notification\\:\\:whereSubjectModel\\(\\)\\.$#"
+			count: 1
+			path: src/Discussion/Discussion.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\User\\:\\:join\\(\\)\\.$#"
+			count: 1
+			path: src/Discussion/Discussion.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/Discussion/DiscussionRepository.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Discussion\\\\Discussion\\:\\:leftJoin\\(\\)\\.$#"
+			count: 1
+			path: src/Discussion/DiscussionRepository.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Discussion\\\\Discussion\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Discussion/DiscussionRepository.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Query\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/Discussion/Filter/DiscussionFilterer.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Database\\\\AbstractModel\\:\\:\\$id\\.$#"
+			count: 1
+			path: src/Discussion/IdWithTransliteratedSlugDriver.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Database\\\\AbstractModel\\:\\:\\$slug\\.$#"
+			count: 2
+			path: src/Discussion/IdWithTransliteratedSlugDriver.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Query\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/Discussion/Search/DiscussionSearcher.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Discussion\\\\Discussion\\:\\:select\\(\\)\\.$#"
+			count: 1
+			path: src/Discussion/Search/Gambit/FulltextGambit.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Post\\\\Post\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/Discussion/Search/Gambit/FulltextGambit.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$vendor\\.$#"
+			count: 4
+			path: src/Extension/ExtensionManager.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$public\\.$#"
+			count: 2
+			path: src/Filesystem/FilesystemServiceProvider.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\User\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Forum/Auth/ResponseFactory.php
+
+		-
+			message: "#^Access to an undefined property object\\:\\:\\$attributes\\.$#"
+			count: 1
+			path: src/Forum/Content/Discussion.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\EmailToken\\:\\:validOrFail\\(\\)\\.$#"
+			count: 1
+			path: src/Forum/Controller/ConfirmEmailViewController.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\PasswordToken\\:\\:findOrFail\\(\\)\\.$#"
+			count: 1
+			path: src/Forum/Controller/ResetPasswordController.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\PasswordToken\\:\\:findOrFail\\(\\)\\.$#"
+			count: 1
+			path: src/Forum/Controller/SavePasswordController.php
+
+		-
+			message: "#^Class Illluminate\\\\Container\\\\Container not found\\.$#"
+			count: 2
+			path: src/Foundation/Application.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$vendor\\.$#"
+			count: 1
+			path: src/Foundation/Console/AssetsPublishCommand.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$storage\\.$#"
+			count: 1
+			path: src/Foundation/Console/CacheClearCommand.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\ConnectionInterface\\:\\:getPdo\\(\\)\\.$#"
+			count: 1
+			path: src/Foundation/Console/InfoCommand.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$storage\\.$#"
+			count: 4
+			path: src/Foundation/InstalledSite.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$base\\.$#"
+			count: 1
+			path: src/Foundation/Paths.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$vendor\\.$#"
+			count: 1
+			path: src/Foundation/Paths.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$base\\.$#"
+			count: 3
+			path: src/Foundation/Site.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$storage\\.$#"
+			count: 2
+			path: src/Foundation/UninstalledSite.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Filesystem\\\\Filesystem\\:\\:has\\(\\)\\.$#"
+			count: 1
+			path: src/Frontend/Compiler/JsCompiler.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Filesystem\\\\Filesystem\\:\\:url\\(\\)\\.$#"
+			count: 1
+			path: src/Frontend/Compiler/JsCompiler.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Filesystem\\\\Filesystem\\:\\:has\\(\\)\\.$#"
+			count: 4
+			path: src/Frontend/Compiler/RevisionCompiler.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Filesystem\\\\Filesystem\\:\\:read\\(\\)\\.$#"
+			count: 2
+			path: src/Frontend/Compiler/RevisionCompiler.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Filesystem\\\\Filesystem\\:\\:url\\(\\)\\.$#"
+			count: 1
+			path: src/Frontend/Compiler/RevisionCompiler.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/Group/Filter/GroupFilterer.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/Group/GroupRepository.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Group\\\\Group\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Group/GroupRepository.php
+
+		-
+			message: "#^Call to an undefined static method static\\(Flarum\\\\Group\\\\Permission\\)\\:\\:get\\(\\)\\.$#"
+			count: 1
+			path: src/Group/Permission.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereValid\\(\\)\\.$#"
+			count: 1
+			path: src/Http/AccessToken.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/Http/AccessToken.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Api\\\\ApiKey\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Middleware/AuthenticateWithHeader.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\User\\:\\:find\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Middleware/AuthenticateWithHeader.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Http\\\\AccessToken\\:\\:whereExpired\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Middleware/CollectGarbage.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\EmailToken\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Middleware/CollectGarbage.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\PasswordToken\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Middleware/CollectGarbage.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\RegistrationToken\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Http/Middleware/CollectGarbage.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$base\\.$#"
+			count: 2
+			path: src/Install/Installation.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$public\\.$#"
+			count: 1
+			path: src/Install/Installation.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$storage\\.$#"
+			count: 1
+			path: src/Install/Installation.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$vendor\\.$#"
+			count: 2
+			path: src/Install/Installation.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Install\\\\Steps\\\\EnableBundledExtensions\\:\\:\\$migrator\\.$#"
+			count: 2
+			path: src/Install/Steps/EnableBundledExtensions.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Notification\\\\Notification\\:\\:where\\(\\)\\.$#"
+			count: 2
+			path: src/Notification/Command/ReadNotificationHandler.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Notification\\\\MailableInterface\\:\\:getType\\(\\)\\.$#"
+			count: 1
+			path: src/Notification/Driver/EmailNotificationDriver.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Database\\\\AbstractModel\\:\\:\\$id\\.$#"
+			count: 1
+			path: src/Notification/Notification.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereSubjectModel\\(\\)\\.$#"
+			count: 1
+			path: src/Notification/Notification.php
+
+		-
+			message: "#^Call to an undefined static method static\\(Flarum\\\\Notification\\\\Notification\\)\\:\\:insert\\(\\)\\.$#"
+			count: 1
+			path: src/Notification/Notification.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Notification\\\\Notification\\:\\:select\\(\\)\\.$#"
+			count: 1
+			path: src/Notification/NotificationRepository.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Notification\\\\Notification\\:\\:selectRaw\\(\\)\\.$#"
+			count: 1
+			path: src/Notification/NotificationRepository.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Notification\\\\Notification\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Notification/NotificationRepository.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Notification\\\\Notification\\:\\:matchingBlueprint\\(\\)\\.$#"
+			count: 3
+			path: src/Notification/NotificationSyncer.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Notification\\\\Notification\\:\\:whereIn\\(\\)\\.$#"
+			count: 1
+			path: src/Notification/NotificationSyncer.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 2
+			path: src/Post/Access/ScopePostVisibility.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/Post/Filter/PostFilterer.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/Post/Post.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Notification\\\\Notification\\:\\:whereSubject\\(\\)\\.$#"
+			count: 1
+			path: src/Post/Post.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/Post/PostRepository.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Discussion\\\\Discussion\\:\\:find\\(\\)\\.$#"
+			count: 1
+			path: src/Post/PostRepository.php
+
+		-
+			message: "#^Method Flarum\\\\Post\\\\PostRepository\\:\\:findOrFail\\(\\) should return Flarum\\\\Post\\\\Post but returns Illuminate\\\\Database\\\\Eloquent\\\\Builder\\|\\(Illuminate\\\\Database\\\\Eloquent\\\\Collection&iterable\\<Illuminate\\\\Database\\\\Eloquent\\\\Builder\\>\\)\\|Illuminate\\\\Database\\\\Eloquent\\\\Model\\.$#"
+			count: 1
+			path: src/Post/PostRepository.php
+
+		-
+			message: "#^Method Flarum\\\\Post\\\\PostRepository\\:\\:findWhere\\(\\) should return Illuminate\\\\Database\\\\Eloquent\\\\Collection but returns Illuminate\\\\Support\\\\Collection\\.$#"
+			count: 1
+			path: src/Post/PostRepository.php
+
+		-
+			message: "#^Method Flarum\\\\Post\\\\PostRepository\\:\\:queryIds\\(\\) should return Illuminate\\\\Database\\\\Eloquent\\\\Builder but returns Illuminate\\\\Database\\\\Query\\\\Builder\\.$#"
+			count: 1
+			path: src/Post/PostRepository.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Post\\\\Post\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/Post/PostServiceProvider.php
+
+		-
+			message: "#^Call to an undefined static method Illuminate\\\\Database\\\\Eloquent\\\\Model\\:\\:getModels\\(\\)\\.$#"
+			count: 1
+			path: src/Post/RegisteredTypesScope.php
+
+		-
+			message: "#^Access to an undefined property class@anonymous/Queue/QueueServiceProvider\\.php\\:88\\:\\:\\$container\\.$#"
+			count: 2
+			path: src/Queue/QueueServiceProvider.php
+
+		-
+			message: "#^Method Flarum\\\\Update\\\\Controller\\\\IndexController\\:\\:render\\(\\) should return Psr\\\\Http\\\\Message\\\\ResponseInterface but returns Illuminate\\\\Contracts\\\\View\\\\View\\.$#"
+			count: 1
+			path: src/Update/Controller/IndexController.php
+
+		-
+			message: "#^Call to function is_null\\(\\) with string\\|void will always evaluate to false\\.$#"
+			count: 1
+			path: src/User/Access/AbstractPolicy.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\User\\\\EmailToken\\:\\:\\$user\\.$#"
+			count: 1
+			path: src/User/Command/ConfirmEmailHandler.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\EmailToken\\:\\:validOrFail\\(\\)\\.$#"
+			count: 1
+			path: src/User/Command/ConfirmEmailHandler.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\RegistrationToken\\:\\:validOrFail\\(\\)\\.$#"
+			count: 1
+			path: src/User/Command/RegisterUserHandler.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/User/Filter/UserFilterer.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Group\\\\Group\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/User/Guest.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Database\\\\AbstractModel\\:\\:\\$id\\.$#"
+			count: 1
+			path: src/User/IdSlugDriver.php
+
+		-
+			message: "#^Call to an undefined static method static\\(Flarum\\\\User\\\\LoginProvider\\)\\:\\:where\\(\\)\\.$#"
+			count: 1
+			path: src/User/LoginProvider.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Group\\\\Group\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/User/Query/GroupFilterGambit.php
+
+		-
+			message: "#^Method Flarum\\\\User\\\\Search\\\\Gambit\\\\FulltextGambit\\:\\:getUserSearchSubQuery\\(\\) should return Illuminate\\\\Database\\\\Eloquent\\\\Builder but returns Illuminate\\\\Database\\\\Query\\\\Builder\\.$#"
+			count: 1
+			path: src/User/Search/Gambit/FulltextGambit.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/User/Search/UserSearcher.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\User\\\\User\\:\\:\\$groups\\.$#"
+			count: 2
+			path: src/User/User.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Query\\\\Builder\\:\\:whereSubjectVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/User/User.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Group\\\\Permission\\:\\:whereIn\\(\\)\\.$#"
+			count: 1
+			path: src/User/User.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\Notification\\\\Notification\\:\\:whereSubject\\(\\)\\.$#"
+			count: 1
+			path: src/User/User.php
+
+		-
+			message: "#^Call to method allows\\(\\) on an unknown class Flarum\\\\User\\\\Gate\\.$#"
+			count: 1
+			path: src/User/User.php
+
+		-
+			message: "#^Method Flarum\\\\User\\\\User\\:\\:addGroupProcessor\\(\\) should return array but return statement is missing\\.$#"
+			count: 1
+			path: src/User/User.php
+
+		-
+			message: "#^Method Flarum\\\\User\\\\User\\:\\:read\\(\\) should return Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\BelongsTo but returns Illuminate\\\\Database\\\\Eloquent\\\\Relations\\\\BelongsToMany\\.$#"
+			count: 1
+			path: src/User/User.php
+
+		-
+			message: "#^Parameter \\$gate of method Flarum\\\\User\\\\User\\:\\:setGate\\(\\) has invalid type Flarum\\\\User\\\\Gate\\.$#"
+			count: 1
+			path: src/User/User.php
+
+		-
+			message: "#^Property Flarum\\\\User\\\\User\\:\\:\\$gate has unknown class Flarum\\\\User\\\\Gate as its type\\.$#"
+			count: 1
+			path: src/User/User.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
+			count: 1
+			path: src/User/UserRepository.php
+
+		-
+			message: "#^Call to an undefined static method Flarum\\\\User\\\\User\\:\\:where\\(\\)\\.$#"
+			count: 6
+			path: src/User/UserRepository.php
+
+		-
+			message: "#^Method Flarum\\\\User\\\\UserRepository\\:\\:findOrFail\\(\\) should return Flarum\\\\User\\\\User but returns Illuminate\\\\Database\\\\Eloquent\\\\Builder\\|Illuminate\\\\Database\\\\Eloquent\\\\Model\\.$#"
+			count: 1
+			path: src/User/UserRepository.php
+
+		-
+			message: "#^Method Flarum\\\\User\\\\UserRepository\\:\\:findOrFailByUsername\\(\\) should return Flarum\\\\User\\\\User but returns Illuminate\\\\Database\\\\Eloquent\\\\Builder\\|Illuminate\\\\Database\\\\Eloquent\\\\Model\\.$#"
+			count: 1
+			path: src/User/UserRepository.php
+
+		-
+			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Container\\\\Container\\:\\:makeWith\\(\\)\\.$#"
+			count: 1
+			path: src/User/UserServiceProvider.php
+
+		-
+			message: "#^Access to an undefined property Flarum\\\\Database\\\\AbstractModel\\:\\:\\$username\\.$#"
+			count: 1
+			path: src/User/UsernameSlugDriver.php
+
+		-
+			message: "#^Template type T of function resolve\\(\\) is not referenced in a parameter\\.$#"
+			count: 1
+			path: src/helpers.php
+
