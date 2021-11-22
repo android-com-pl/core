@@ -84,10 +84,6 @@ export default class KeyboardNavigatable {
    * Provide a callback to be executed when previous input is removed.
    *
    * This will be triggered by the Backspace key.
-   *
-   * @public
-   * @param {KeyboardNavigatable~keyCallback} callback
-   * @return {KeyboardNavigatable}
    */
   onRemove(callback: KeyboardEventHandler): KeyboardNavigatable {
     this.callbacks.set(8, (e) => {
