@@ -41,6 +41,7 @@ abstract class AbstractRegexGambit implements GambitInterface
         if (preg_match('/^(-?)'.$this->getGambitPattern().'$/i', $bit, $matches)) {
             return $matches;
         }
+
         return [];
     }
 
