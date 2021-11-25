@@ -30,8 +30,8 @@ class RegisteringFromProvider
 
     /**
      * @param User $user
-     * @param $provider
-     * @param $payload
+     * @param string $provider
+     * @param array $payload
      */
     public function __construct(User $user, string $provider, array $payload)
     {

@@ -1,5 +1,6 @@
 includes:
   - phpstan-baseline.neon
+  - vendor/flarum/phpstan/extension.neon
 
 parameters:
 	level: 4
@@ -7,3 +8,4 @@ parameters:
 		- src
 	excludePaths:
 	  - *.blade.php
+	  - src/Formatter/Formatter.php

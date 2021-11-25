@@ -118,6 +118,7 @@ abstract class AbstractSerializer extends BaseAbstractSerializer
         if ($date) {
             return $date->format(DateTime::RFC3339);
         }
+        return null;
     }
 
     /**
@@ -156,6 +157,7 @@ abstract class AbstractSerializer extends BaseAbstractSerializer
                 return $relationship;
             }
         }
+        return null;
     }
 
     /**
@@ -189,7 +191,7 @@ abstract class AbstractSerializer extends BaseAbstractSerializer
      * @param string|Closure|\Tobscure\JsonApi\SerializerInterface $serializer
      * @param string|null $relation
      * @param bool $many
-     * @return Relationship
+     * @return Relationship|null
      */
     protected function buildRelationship($model, $serializer, $relation = null, $many = false)
     {
@@ -210,6 +212,7 @@ abstract class AbstractSerializer extends BaseAbstractSerializer
 
             return new Relationship($element);
         }
+        return null;
     }
 
     /**

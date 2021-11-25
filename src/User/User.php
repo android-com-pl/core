@@ -33,6 +33,7 @@ use Flarum\User\Exception\NotAuthenticatedException;
 use Flarum\User\Exception\PermissionDeniedException;
 use Illuminate\Contracts\Filesystem\Factory;
 use Illuminate\Contracts\Hashing\Hasher;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 
 /**
@@ -50,6 +51,7 @@ use Illuminate\Support\Arr;
  * @property \Carbon\Carbon|null $read_notifications_at
  * @property int $discussion_count
  * @property int $comment_count
+ * @mixin AbstractModel
  */
 class User extends AbstractModel
 {
@@ -109,7 +111,7 @@ class User extends AbstractModel
     /**
      * The access gate.
      *
-     * @var Gate
+     * @var Access\Gate
      */
     protected static $gate;
 
@@ -166,7 +168,7 @@ class User extends AbstractModel
     }
 
     /**
-     * @param Gate $gate
+     * @param Access\Gate $gate
      */
     public static function setGate($gate)
     {

@@ -10,6 +10,7 @@
 namespace Flarum\User;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 
 class UserRepository
 {
@@ -28,10 +29,8 @@ class UserRepository
      * user, or throw an exception.
      *
      * @param int $id
-     * @param User $actor
-     * @return User
-     *
-     * @throws \Illuminate\Database\Eloquent\ModelNotFoundException
+     * @param User|null $actor
+     * @return User|Model
      */
     public function findOrFail($id, User $actor = null)
     {
@@ -44,11 +43,9 @@ class UserRepository
      * Find a user by username, optionally making sure it is visible to a certain
      * user, or throw an exception.
      *
-     * @param int $id
-     * @param User $actor
-     * @return User
-     *
-     * @throws \Illuminate\Database\Eloquent\ModelNotFoundException
+     * @param int $username
+     * @param User|null $actor
+     * @return User|Model
      */
     public function findOrFailByUsername($username, User $actor = null)
     {
@@ -61,7 +58,7 @@ class UserRepository
      * Find a user by an identification (username or email).
      *
      * @param string $identification
-     * @return User|null
+     * @return User|null|Model
      */
     public function findByIdentification($identification)
     {
@@ -74,7 +71,7 @@ class UserRepository
      * Find a user by email.
      *
      * @param string $email
-     * @return User|null
+     * @return User|null|Model
      */
     public function findByEmail($email)
     {
@@ -118,7 +115,7 @@ class UserRepository
      * Scope a query to only include records that are visible to a user.
      *
      * @param Builder $query
-     * @param User $actor
+     * @param User|null $actor
      * @return Builder
      */
     protected function scopeVisibleTo(Builder $query, User $actor = null)

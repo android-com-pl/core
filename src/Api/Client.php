@@ -46,7 +46,7 @@ class Client
     protected $body = [];
 
     /**
-     * @param Container $container
+     * @param MiddlewarePipeInterface $pipe
      */
     public function __construct(MiddlewarePipeInterface $pipe)
     {
@@ -130,17 +130,13 @@ class Client
             ->withMethod($method)
             ->withUri(new Uri($path));
 
-        if ($this->parent) {
-            $request = $request
-                ->withAttribute('ipAddress', $this->parent->getAttribute('ipAddress'))
-                ->withAttribute('session', $this->parent->getAttribute('session'));
-            $request = RequestUtil::withActor($request, RequestUtil::getActor($this->parent));
-        }
+        $request = $request
+            ->withAttribute('ipAddress', $this->parent->getAttribute('ipAddress'))
+            ->withAttribute('session', $this->parent->getAttribute('session'));
+        $request = RequestUtil::withActor($request, RequestUtil::getActor($this->parent));
 
         // This should override the actor from the parent request, if one exists.
-        if ($this->actor) {
-            $request = RequestUtil::withActor($request, $this->actor);
-        }
+        $request = RequestUtil::withActor($request, $this->actor);
 
         return $this->pipe->handle($request);
     }

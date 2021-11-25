@@ -79,8 +79,8 @@ class NotificationSerializer extends AbstractSerializer
     }
 
     /**
-     * @param $type
-     * @param $serializer
+     * @param string $type
+     * @param string $serializer
      */
     public static function setSubjectSerializer($type, $serializer)
     {

@@ -38,7 +38,7 @@ class Frontend implements ExtenderInterface
     private $titleDriver;
 
     /**
-     * @param string $frontend: The name of the frontend.
+     * @param string $frontend The name of the frontend.
      */
     public function __construct(string $frontend)
     {
@@ -48,7 +48,7 @@ class Frontend implements ExtenderInterface
     /**
      * Add a CSS file to load in the frontend.
      *
-     * @param string $path: The path to the CSS file.
+     * @param string $path The path to the CSS file.
      * @return self
      */
     public function css(string $path): self
@@ -61,7 +61,7 @@ class Frontend implements ExtenderInterface
     /**
      * Add a JavaScript file to load in the frontend.
      *
-     * @param string $path: The path to the JavaScript file.
+     * @param string $path The path to the JavaScript file.
      * @return self
      */
     public function js(string $path): self
@@ -74,8 +74,8 @@ class Frontend implements ExtenderInterface
     /**
      * Add a route to the frontend.
      *
-     * @param string $path: The path of the route.
-     * @param string $name: The name of the route, must be unique.
+     * @param string $path The path of the route.
+     * @param string $name The name of the route, must be unique.
      * @param callable|string|null $content
      *
      * The content can be a closure or an invokable class, and should accept:
@@ -97,7 +97,7 @@ class Frontend implements ExtenderInterface
      * Remove a route from the frontend.
      * This is necessary before overriding a route.
      *
-     * @param string $name: The name of the route.
+     * @param string $name The name of the route.
      * @return self
      */
     public function removeRoute(string $name): self
@@ -110,7 +110,7 @@ class Frontend implements ExtenderInterface
     /**
      * Modify the content of the frontend.
      *
-     * @param callable|string|null $content
+     * @param callable|string|null $callback
      *
      * The content can be a closure or an invokable class, and should accept:
      * - \Flarum\Frontend\Document $document

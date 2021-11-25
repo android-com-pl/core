@@ -39,7 +39,7 @@ class UserValidator extends AbstractValidator
      */
     protected function getRules()
     {
-        $idSuffix = $this->user ? ','.$this->user->id : '';
+        $idSuffix = ','.$this->user->id;
 
         return [
             'username' => [

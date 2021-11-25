@@ -27,7 +27,7 @@ class GambitManager
     protected $fulltextGambit;
 
     /**
-     * @param GambitInterface $gambit
+     * @param GambitInterface $fulltextGambit
      */
     public function __construct(GambitInterface $fulltextGambit)
     {

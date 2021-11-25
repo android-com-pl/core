@@ -24,7 +24,6 @@ class DiscussionPolicy extends AbstractPolicy
 
     /**
      * @param SettingsRepositoryInterface $settings
-     * @param Dispatcher $events
      */
     public function __construct(SettingsRepositoryInterface $settings)
     {

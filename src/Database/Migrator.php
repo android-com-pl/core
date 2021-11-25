@@ -192,7 +192,7 @@ class Migrator
     /**
      * Runs a closure migration based on the migrate direction.
      *
-     * @param        $migration
+     * @param array $migration
      * @param string $direction
      * @throws Exception
      */
@@ -215,7 +215,7 @@ class Migrator
     {
         $files = $this->files->glob($path.'/*_*.php');
 
-        if ($files === false) {
+        if ($files == false) {
             return [];
         }
 
@@ -234,9 +234,10 @@ class Migrator
     /**
      * Resolve a migration instance from a file.
      *
-     * @param  string $path
-     * @param  string $file
+     * @param string $path
+     * @param string $file
      * @return array
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function resolve($path, $file)
     {
@@ -245,6 +246,7 @@ class Migrator
         if ($this->files->exists($migration)) {
             return $this->files->getRequire($migration);
         }
+        return [];
     }
 
     /**
@@ -304,9 +306,7 @@ class Migrator
      */
     protected function note($message)
     {
-        if ($this->output) {
-            $this->output->writeln($message);
-        }
+        $this->output->writeln($message);
     }
 
     /**
