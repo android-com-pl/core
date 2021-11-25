@@ -19,8 +19,9 @@ interface FilterInterface
     /**
      * Filters a query.
      *
-     * @param FilterState $filter
+     * @param FilterState $filterState
      * @param string $filterValue The value of the requested filter
+     * @param bool $negate
      */
     public function filter(FilterState $filterState, string $filterValue, bool $negate);
 }

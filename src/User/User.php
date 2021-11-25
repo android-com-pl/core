@@ -33,7 +33,6 @@ use Flarum\User\Exception\NotAuthenticatedException;
 use Flarum\User\Exception\PermissionDeniedException;
 use Illuminate\Contracts\Filesystem\Factory;
 use Illuminate\Contracts\Hashing\Hasher;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 
 /**

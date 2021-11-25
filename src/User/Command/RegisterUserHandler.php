@@ -52,8 +52,9 @@ class RegisterUserHandler
     /**
      * @param Dispatcher $events
      * @param SettingsRepositoryInterface $settings
-     * @param UserValidator $validator
+     * @param UserValidator $userValidator
      * @param AvatarUploader $avatarUploader
+     * @param Factory $validator
      */
     public function __construct(Dispatcher $events, SettingsRepositoryInterface $settings, UserValidator $userValidator, AvatarUploader $avatarUploader, Factory $validator)
     {

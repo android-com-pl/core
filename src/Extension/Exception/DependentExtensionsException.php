@@ -23,8 +23,8 @@ class DependentExtensionsException extends Exception
     public $dependent_extensions;
 
     /**
-     * @param $extension: The extension we are attempting to disable.
-     * @param $dependent_extensions: Enabled Flarum extensions that depend on this extension.
+     * @param Extension $extension The extension we are attempting to disable.
+     * @param array $dependent_extensions Enabled Flarum extensions that depend on this extension.
      */
     public function __construct(Extension $extension, array $dependent_extensions)
     {

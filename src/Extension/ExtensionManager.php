@@ -72,6 +72,7 @@ class ExtensionManager
 
     /**
      * @return Collection
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function getExtensions()
     {
@@ -144,6 +145,7 @@ class ExtensionManager
      *
      * @param string $name
      * @return Extension|null
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function getExtension($name)
     {
@@ -155,6 +157,8 @@ class ExtensionManager
      *
      * @param string $name
      *
+     * @throws Exception\MissingDependenciesException
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      * @internal
      */
     public function enable($name)
@@ -197,6 +201,8 @@ class ExtensionManager
      *
      * @param string $name
      *
+     * @throws Exception\DependentExtensionsException
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      * @internal
      */
     public function disable($name)
@@ -234,6 +240,8 @@ class ExtensionManager
      * Uninstalls an extension.
      *
      * @param string $name
+     * @throws Exception\DependentExtensionsException
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      * @internal
      */
     public function uninstall($name)
@@ -338,6 +346,7 @@ class ExtensionManager
      * Get only enabled extensions.
      *
      * @return array|Extension[]
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function getEnabledExtensions()
     {
@@ -357,6 +366,8 @@ class ExtensionManager
      * Call on all enabled extensions to extend the Flarum application.
      *
      * @param Container $container
+     * @throws Exception\ExtensionBootError
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function extend(Container $container)
     {
@@ -394,8 +405,9 @@ class ExtensionManager
     /**
      * Whether the extension is enabled.
      *
-     * @param $extension
+     * @param string $extension
      * @return bool
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
      */
     public function isEnabled($extension)
     {

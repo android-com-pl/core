@@ -14,6 +14,7 @@ use Flarum\Query\QueryCriteria;
 use Flarum\Query\QueryResults;
 use Flarum\User\User;
 use Illuminate\Database\Eloquent\Builder;
+use InvalidArgumentException;
 
 abstract class AbstractSearcher
 {

@@ -29,7 +29,7 @@ class FulltextGambit implements GambitInterface
     }
 
     /**
-     * @param $searchValue
+     * @param string $searchValue
      * @return \Illuminate\Database\Eloquent\Builder
      */
     private function getUserSearchSubQuery($searchValue)

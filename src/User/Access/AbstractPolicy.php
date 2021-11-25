@@ -40,7 +40,7 @@ abstract class AbstractPolicy
     }
 
     /**
-     * @param User $user
+     * @param User $actor
      * @param string $ability
      * @param $instance
      * @return string|void

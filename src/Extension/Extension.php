@@ -105,7 +105,7 @@ class Extension implements Arrayable
     protected $version;
 
     /**
-     * @param       $path
+     * @param string $path
      * @param array $composerJson
      */
     public function __construct($path, $composerJson)
@@ -166,7 +166,7 @@ class Extension implements Arrayable
      *
      * @see https://laravel.com/docs/8.x/helpers#arrays
      *
-     * @param $name
+     * @param string $name
      * @return mixed
      */
     public function composerJsonAttribute($name)
