@@ -118,6 +118,7 @@ abstract class AbstractSerializer extends BaseAbstractSerializer
         if ($date) {
             return $date->format(DateTime::RFC3339);
         }
+
         return null;
     }
 
@@ -157,6 +158,7 @@ abstract class AbstractSerializer extends BaseAbstractSerializer
                 return $relationship;
             }
         }
+
         return null;
     }
 
@@ -212,6 +214,7 @@ abstract class AbstractSerializer extends BaseAbstractSerializer
 
             return new Relationship($element);
         }
+
         return null;
     }
 

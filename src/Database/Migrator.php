@@ -246,6 +246,7 @@ class Migrator
         if ($this->files->exists($migration)) {
             return $this->files->getRequire($migration);
         }
+
         return [];
     }
 
