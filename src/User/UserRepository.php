@@ -9,6 +9,7 @@
 
 namespace Flarum\User;
 
+use Flarum\Database\AbstractModel;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -30,7 +31,7 @@ class UserRepository
      *
      * @param int $id
      * @param User|null $actor
-     * @return User|Model
+     * @return User|AbstractModel
      */
     public function findOrFail($id, User $actor = null)
     {
@@ -45,7 +46,7 @@ class UserRepository
      *
      * @param int $username
      * @param User|null $actor
-     * @return User|Model
+     * @return User|AbstractModel
      */
     public function findOrFailByUsername($username, User $actor = null)
     {
@@ -58,7 +59,7 @@ class UserRepository
      * Find a user by an identification (username or email).
      *
      * @param string $identification
-     * @return User|null|Model
+     * @return User|null|AbstractModel
      */
     public function findByIdentification($identification)
     {
@@ -71,7 +72,7 @@ class UserRepository
      * Find a user by email.
      *
      * @param string $email
-     * @return User|null|Model
+     * @return User|null|AbstractModel
      */
     public function findByEmail($email)
     {

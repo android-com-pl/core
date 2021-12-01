@@ -23,6 +23,8 @@ class MaintenanceModeHandler implements RequestHandlerInterface
 
     /**
      * Handle the request and return a response.
+     * @param ServerRequestInterface $request
+     * @return ResponseInterface
      */
     public function handle(ServerRequestInterface $request): ResponseInterface
     {
@@ -35,6 +37,10 @@ class MaintenanceModeHandler implements RequestHandlerInterface
         return new HtmlResponse(self::MESSAGE, 503);
     }
 
+    /**
+     * @param ServerRequestInterface $request
+     * @return bool
+     */
     private function isApiRequest(ServerRequestInterface $request): bool
     {
         return Str::contains(
@@ -43,6 +49,9 @@ class MaintenanceModeHandler implements RequestHandlerInterface
         );
     }
 
+    /**
+     * @return ResponseInterface
+     */
     private function apiResponse(): ResponseInterface
     {
         return new JsonResponse(

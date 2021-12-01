@@ -92,6 +92,7 @@ class Application
      * @param string $key
      * @param mixed $default
      * @return mixed
+     * @throws \Illuminate\Contracts\Container\BindingResolutionException
      */
     public function config($key, $default = null)
     {

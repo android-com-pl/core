@@ -23,11 +23,13 @@ class UserPolicy extends AbstractPolicy
         if ($actor->hasPermission('user.'.$ability)) {
             return $this->allow();
         }
+        return $this->deny();
     }
 
     /**
      * @param User $actor
      * @param User $user
+     * @return string|void
      */
     public function editCredentials(User $actor, User $user)
     {

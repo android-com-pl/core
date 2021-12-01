@@ -21,11 +21,6 @@ parameters:
 			path: src/Console/Schedule.php
 
 		-
-			message: "#^Call to an undefined method Illuminate\\\\Support\\\\HigherOrderCollectionProxy\\:\\:isDue\\(\\)\\.$#"
-			count: 1
-			path: src/Console/Schedule.php
-
-		-
 			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Connection\\:\\:getSchemaState\\(\\)\\.$#"
 			count: 1
 			path: src/Database/Console/GenerateDumpCommand.php
@@ -61,11 +56,6 @@ parameters:
 			path: src/Discussion/DiscussionRepository.php
 
 		-
-			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Query\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
-			count: 1
-			path: src/Discussion/Filter/DiscussionFilterer.php
-
-		-
 			message: "#^Access to an undefined property Flarum\\\\Database\\\\AbstractModel\\:\\:\\$id\\.$#"
 			count: 1
 			path: src/Discussion/IdWithTransliteratedSlugDriver.php
@@ -76,24 +66,9 @@ parameters:
 			path: src/Discussion/IdWithTransliteratedSlugDriver.php
 
 		-
-			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Query\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
-			count: 1
-			path: src/Discussion/Search/DiscussionSearcher.php
-
-		-
 			message: "#^Call to an undefined static method Flarum\\\\Post\\\\Post\\:\\:whereVisibleTo\\(\\)\\.$#"
 			count: 1
 			path: src/Discussion/Search/Gambit/FulltextGambit.php
-
-		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$vendor\\.$#"
-			count: 4
-			path: src/Extension/ExtensionManager.php
-
-		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$public\\.$#"
-			count: 2
-			path: src/Filesystem/FilesystemServiceProvider.php
 
 		-
 			message: "#^Access to an undefined property object\\:\\:\\$attributes\\.$#"
@@ -111,44 +86,9 @@ parameters:
 			path: src/Foundation/Application.php
 
 		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$vendor\\.$#"
-			count: 1
-			path: src/Foundation/Console/AssetsPublishCommand.php
-
-		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$storage\\.$#"
-			count: 1
-			path: src/Foundation/Console/CacheClearCommand.php
-
-		-
 			message: "#^Call to an undefined method Illuminate\\\\Database\\\\ConnectionInterface\\:\\:getPdo\\(\\)\\.$#"
 			count: 1
 			path: src/Foundation/Console/InfoCommand.php
-
-		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$storage\\.$#"
-			count: 4
-			path: src/Foundation/InstalledSite.php
-
-		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$base\\.$#"
-			count: 1
-			path: src/Foundation/Paths.php
-
-		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$vendor\\.$#"
-			count: 1
-			path: src/Foundation/Paths.php
-
-		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$base\\.$#"
-			count: 3
-			path: src/Foundation/Site.php
-
-		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$storage\\.$#"
-			count: 2
-			path: src/Foundation/UninstalledSite.php
 
 		-
 			message: "#^Call to an undefined method Illuminate\\\\Contracts\\\\Filesystem\\\\Filesystem\\:\\:has\\(\\)\\.$#"
@@ -201,26 +141,6 @@ parameters:
 			path: src/Http/Middleware/CollectGarbage.php
 
 		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$base\\.$#"
-			count: 2
-			path: src/Install/Installation.php
-
-		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$public\\.$#"
-			count: 1
-			path: src/Install/Installation.php
-
-		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$storage\\.$#"
-			count: 1
-			path: src/Install/Installation.php
-
-		-
-			message: "#^Access to an undefined property Flarum\\\\Foundation\\\\Paths\\:\\:\\$vendor\\.$#"
-			count: 2
-			path: src/Install/Installation.php
-
-		-
 			message: "#^Access to an undefined property Flarum\\\\Install\\\\Steps\\\\EnableBundledExtensions\\:\\:\\$migrator\\.$#"
 			count: 2
 			path: src/Install/Steps/EnableBundledExtensions.php
@@ -271,29 +191,9 @@ parameters:
 			path: src/Post/PostRepository.php
 
 		-
-			message: "#^Method Flarum\\\\Post\\\\PostRepository\\:\\:findOrFail\\(\\) should return Flarum\\\\Post\\\\Post but returns Illuminate\\\\Database\\\\Eloquent\\\\Builder\\|\\(Illuminate\\\\Database\\\\Eloquent\\\\Collection&iterable\\<Illuminate\\\\Database\\\\Eloquent\\\\Builder\\>\\)\\|Illuminate\\\\Database\\\\Eloquent\\\\Model\\.$#"
-			count: 1
-			path: src/Post/PostRepository.php
-
-		-
-			message: "#^Method Flarum\\\\Post\\\\PostRepository\\:\\:findWhere\\(\\) should return Illuminate\\\\Database\\\\Eloquent\\\\Collection but returns Illuminate\\\\Support\\\\Collection\\.$#"
-			count: 1
-			path: src/Post/PostRepository.php
-
-		-
-			message: "#^Method Flarum\\\\Post\\\\PostRepository\\:\\:queryIds\\(\\) should return Illuminate\\\\Database\\\\Eloquent\\\\Builder but returns Illuminate\\\\Database\\\\Query\\\\Builder\\.$#"
-			count: 1
-			path: src/Post/PostRepository.php
-
-		-
 			message: "#^Call to an undefined static method Illuminate\\\\Database\\\\Eloquent\\\\Model\\:\\:getModels\\(\\)\\.$#"
 			count: 1
 			path: src/Post/RegisteredTypesScope.php
-
-		-
-			message: "#^Access to an undefined property class@anonymous/Queue/QueueServiceProvider\\.php\\:88\\:\\:\\$container\\.$#"
-			count: 2
-			path: src/Queue/QueueServiceProvider.php
 
 		-
 			message: "#^Method Flarum\\\\Update\\\\Controller\\\\IndexController\\:\\:render\\(\\) should return Psr\\\\Http\\\\Message\\\\ResponseInterface but returns Illuminate\\\\Contracts\\\\View\\\\View\\.$#"
@@ -336,19 +236,9 @@ parameters:
 			path: src/User/Query/GroupFilterGambit.php
 
 		-
-			message: "#^Method Flarum\\\\User\\\\Search\\\\Gambit\\\\FulltextGambit\\:\\:getUserSearchSubQuery\\(\\) should return Illuminate\\\\Database\\\\Eloquent\\\\Builder but returns Illuminate\\\\Database\\\\Query\\\\Builder\\.$#"
-			count: 1
-			path: src/User/Search/Gambit/FulltextGambit.php
-
-		-
 			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Eloquent\\\\Builder\\:\\:whereVisibleTo\\(\\)\\.$#"
 			count: 1
 			path: src/User/Search/UserSearcher.php
-
-		-
-			message: "#^Call to an undefined method Illuminate\\\\Database\\\\Query\\\\Builder\\:\\:whereSubjectVisibleTo\\(\\)\\.$#"
-			count: 1
-			path: src/User/User.php
 
 		-
 			message: "#^Call to an undefined static method Flarum\\\\Notification\\\\Notification\\:\\:whereSubject\\(\\)\\.$#"
