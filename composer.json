@@ -86,8 +86,8 @@
         "wikimedia/less.php": "^3.0"
     },
     "require-dev": {
-        "flarum/testing": "1.0@dev",
-        "flarum/phpstan": "dev-master"
+        "flarum/phpstan": "dev-master",
+        "flarum/testing": "1.0@dev"
     },
     "autoload": {
         "psr-4": {
@@ -124,5 +124,9 @@
         "test:unit": "Runs all unit tests.",
         "test:integration": "Runs all integration tests.",
         "test:setup": "Sets up a database for use with integration tests. Execute this only once."
-    }
+    },
+    "repositories": [{
+        "type": "path",
+        "url": "packages/*"
+    }]
 }

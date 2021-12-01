@@ -9,3 +9,5 @@ parameters:
 	excludePaths:
 	  - *.blade.php
 	  - src/Formatter/Formatter.php
+
+	databaseMigrationsPath: ['migrations']
