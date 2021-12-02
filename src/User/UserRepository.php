@@ -31,9 +31,9 @@ class UserRepository
      *
      * @param int $id
      * @param User|null $actor
-     * @return User|AbstractModel
+     * @return User
      */
-    public function findOrFail($id, User $actor = null)
+    public function findOrFail(int $id, User $actor = null) : User
     {
         $query = User::where('id', $id);
 
