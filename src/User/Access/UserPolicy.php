@@ -23,6 +23,7 @@ class UserPolicy extends AbstractPolicy
         if ($actor->hasPermission('user.'.$ability)) {
             return $this->allow();
         }
+
         return $this->deny();
     }
 

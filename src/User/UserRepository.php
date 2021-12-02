@@ -11,7 +11,6 @@ namespace Flarum\User;
 
 use Flarum\Database\AbstractModel;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 
 class UserRepository
 {
