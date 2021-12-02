@@ -32,7 +32,7 @@ class UserRepository
      * @param User|null $actor
      * @return User
      */
-    public function findOrFail(int $id, User $actor = null) : User
+    public function findOrFail(int $id, User $actor = null): User
     {
         $query = User::where('id', $id);
 
