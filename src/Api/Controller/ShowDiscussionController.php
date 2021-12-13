@@ -98,8 +98,16 @@ class ShowDiscussionController extends AbstractShowController
             $this->includePosts($discussion, $request, $postRelationships);
         }
 
+        if (in_array('tags.state', $include, true)) {
+            $discussion->load([
+                'tags.state' => function ($query) use ($actor) {
+                    $query->where('user_id', $actor->id);
+                }
+            ]);
+        }
+
         $discussion->load(array_filter($include, function ($relationship) {
-            return ! Str::startsWith($relationship, 'posts');
+            return ! Str::startsWith($relationship, 'posts') && $relationship !== 'tags.state';
         }));
 
         return $discussion;
